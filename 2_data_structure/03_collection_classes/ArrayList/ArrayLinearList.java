@@ -1,6 +1,6 @@
 package ArrayList;
 
-import Chapter_19_Data_Structure.Collection_Interfaces.List.LinearList;
+import List.LinearList;
 
 public class ArrayLinearList implements LinearList {
 

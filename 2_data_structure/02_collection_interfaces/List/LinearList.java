@@ -1,5 +1,4 @@
-package Chapter_19_Data_Structure.Collection_Interfaces.List;
-
+package List;
 public interface LinearList{
     // add
     public void add(int index, Object o);
