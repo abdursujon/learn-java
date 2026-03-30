@@ -1,7 +1,7 @@
 public class AnonymousClasses {
     public static void main(String[] args){
         // AnonymousClass which can implement the Animal interface without creating a subclass
-        Animal myAnimal = new Animal(){
+        Animals myAnimal = new Animals(){
             public void makeSound(){
                 System.out.println("Meow meow");
             }
@@ -11,6 +11,6 @@ public class AnonymousClasses {
     }
 }
 
-interface Animal {
+interface Animals {
     public void makeSound();
 }
