@@ -1,3 +1,5 @@
+package ch19_exception_handling;
+
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.IOException;

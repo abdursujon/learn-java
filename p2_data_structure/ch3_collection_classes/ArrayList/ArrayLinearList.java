@@ -1,4 +1,4 @@
-package ArrayList;
+package ch3_collection_classes.ArrayList;
 
 import List.LinearList;
 

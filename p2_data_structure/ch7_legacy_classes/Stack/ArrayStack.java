@@ -1,8 +1,8 @@
-package Stack;
+package ch7_legacy_classes.Stack;
 
 import java.util.EmptyStackException;
 
-public class ArrayStack implements Stack{
+public class ArrayStack implements Stacks {
     int top;
     Object[] stack;
 
@@ -11,6 +11,7 @@ public class ArrayStack implements Stack{
             throw new IllegalArgumentException("Capacity must be >= 1");
         }
         stack = new Object[initialCapacity];
+        top = -1;
     }
 
     public ArrayStack(){

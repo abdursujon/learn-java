@@ -1,4 +1,4 @@
-package LinkedList;
+package ch3_collection_classes.LinkedList;
 
 public class LinkNode{
     public Object theObject;

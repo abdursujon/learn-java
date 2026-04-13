@@ -1,10 +1,9 @@
-package Stack;
+package ch7_legacy_classes.Stack;
 
-import LinkedList.LinkNode;
-
+import ch3_collection_classes.LinkedList.LinkNode;
 import java.util.EmptyStackException;
 
-public class LinkedStack implements Stack {
+public class LinkedStack implements Stacks {
     protected LinkNode top;
 
     public LinkedStack(){

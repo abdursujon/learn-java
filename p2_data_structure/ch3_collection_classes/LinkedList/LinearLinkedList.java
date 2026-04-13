@@ -1,6 +1,5 @@
-package LinkedList;
+package ch3_collection_classes.LinkedList;
 
-import java.util.LinkedList;
 import List.LinearList;
 
 public class LinearLinkedList implements LinearList{
