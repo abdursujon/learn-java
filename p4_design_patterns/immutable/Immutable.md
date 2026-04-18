@@ -1,2 +1,0 @@
-1. No method should modify the values of a class’s instance variables (except a constructor)
-2. Any method that needs to alter the state of an instance variable in such a class must create a new instance
