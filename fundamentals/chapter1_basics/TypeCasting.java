@@ -1,9 +1,5 @@
-package ch2_type_casting;
-
-import ch1_primitive_types.Primitives;
-
 public class TypeCasting {
-    Primitives prim = new Primitives();
+    PrimitiveDataTypes prim = new PrimitiveDataTypes();
     float f = (float) prim.d;
     long l = (long) prim.f;
     int i = (int) prim.l;

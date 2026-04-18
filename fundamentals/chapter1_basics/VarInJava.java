@@ -1,4 +1,3 @@
-package ch3_var;
 
 import java.util.ArrayList;
 import java.util.HashMap;

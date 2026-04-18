@@ -1,4 +1,3 @@
-package ch4_operators;
 
 /**
  *  = is assignment — it sets a value

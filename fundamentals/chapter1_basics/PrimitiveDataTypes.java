@@ -1,6 +1,4 @@
-package ch1_primitive_types;
-
-public class Primitives {
+public class PrimitiveDataTypes {
     public byte b = 55;
     public short s = 5555;
     public int i = 555555555;
@@ -11,7 +9,7 @@ public class Primitives {
     public boolean bool = true;
 
     public static void main(String[] args){
-        Primitives prim = new Primitives();
+        PrimitiveDataTypes prim = new PrimitiveDataTypes();
         System.out.println(prim.b + "\n" + prim.s + "\n" + prim.i + "\n" + prim.l + "\n" + prim.f + "\n" + prim.d + "\n" + prim.c + "\n" + prim.bool);
     }
 }
