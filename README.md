@@ -91,6 +91,7 @@ List of things that will be covered
 - Generics.java
 - Comparable.java
 - Comparator.java
+- Iterator 
 
 ### chapter13_functional/
 - Lambda.java
@@ -102,11 +103,14 @@ List of things that will be covered
 ### chapter14_file_handling/
 - FileHandling.java
 - Serialization.java
+- NIO.java 
 
 ### chapter15_advanced/
 - Annotations.java
 - GarbageCollection.java
 - Multithreading.java
+- Reflection.java 
+- Concurrency.java 
 
 ## 2. Data Structures
 
