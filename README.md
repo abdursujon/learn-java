@@ -176,63 +176,52 @@ List of things that will be covered
 
 ## 3. Algorithms
 
-### chapter1_searching/
-- LinearSearch.java
-- BinarySearch.java
-- BinarySearchVariants.java
+chapter1_searching/                                                                                                   
+   
+  - LinearSearch.java                                                                                                   
+  - BinarySearch.java
+  - BinarySearchVariants.java
 
-### chapter2_sorting/
-- MergeSort.java
-- QuickSort.java
-- HeapSort.java
-- CountingSort.java
+  chapter2_sorting/
 
-### chapter3_recursion_backtracking/
-- RecursionBasics.java
-- Permutations.java
-- Combinations.java
-- Subsets.java
-- NQueens.java
+  - BubbleSort.java                                                                                                     
+  - InsertionSort.java
+  - MergeSort.java                                                                                                      
+  - QuickSort.java
 
-### chapter4_two_pointers_sliding_window/
-- TwoPointers.java
-- SlidingWindowFixed.java
-- SlidingWindowVariable.java
-- FastSlowPointers.java
+  chapter3_recursion/                                                                                                   
+   
+  - RecursionBasics.java                                                                                                
+  - Subsets.java  
+  - Permutations.java
 
-### chapter5_bit_manipulation/
-- BitBasics.java
-- BitTricks.java
-- XORProblems.java
+  chapter4_two_pointers_sliding_window/
 
-### chapter6_tree_algorithms/
-- TreeTraversals.java
-- LowestCommonAncestor.java
-- SerializeDeserialize.java
+  - TwoPointers.java
+  - SlidingWindowFixed.java
+  - SlidingWindowVariable.java                                                                                          
+  - FastSlowPointers.java
+                                                                                                                        
+  chapter5_bit_manipulation/
 
-### chapter7_graph_algorithms/
-- BFS.java
-- DFS.java
-- TopologicalSort.java
-- Dijkstra.java
-- UnionFind.java
+  - BitBasics.java
+  - XORProblems.java
+                                                                                                                        
+  chapter6_tree_algorithms/
+                                                                                                                        
+  - TreeTraversals.java
+  - BSTOperations.java
+                                                                                                                        
+  chapter7_graph_algorithms/
+                                                                                                                        
+  - BFS.java      
+  - DFS.java
 
-### chapter8_greedy/
-- ActivitySelection.java
-- IntervalScheduling.java
+  chapter8_dynamic_programming/
 
-### chapter9_dynamic_programming/
-- DPBasics.java
-- MemoizationVsTabulation.java
-- Knapsack.java
-- LongestCommonSubsequence.java
-- LongestIncreasingSubsequence.java
-- EditDistance.java
-- CoinChange.java
-
-### chapter10_divide_and_conquer/
-- QuickSelect.java
-- MaxSubarray.java
+  - DPBasics.java
+  - MemoizationVsTabulation.java
+  - CoinChange.java  
 
 ## 4. Design Patterns
 - MVC
@@ -247,28 +236,38 @@ A Link of practical implementation of Spring Boot Will be provided Soon.
 
 
 ## 6. Problem-Solving 
-- Array 
-- Arrays
-- Two Pointers
-- Sliding Window
-- Bit Manipulation
-- String manipulation
-- Binary Search
-- Recursion
-- Dynamic Programming
-- Backtracking
-- Sorting algorithms
-- LinkedList
-- ArrayList
-- HashSet
-- HashMap
-- Stacks
-- Queues
-- Binary Trees
-- Binary Search Trees
-- Heaps
-- Graphs
-- Trie
-- Greedy algorithms
-- Intervals
-- Database 
+### Foundations
+  - Big O / Complexity Analysis                                                                                         
+  - Arrays        
+  - Strings *** 
+  - Math
+                                                                                                                        
+### Techniques
+  - Two Pointers                                                                                                        
+  - Sliding Window
+  - Prefix Sum
+  - Binary Search
+  - Recursion                                                                                                           
+  - Bit Manipulation
+  - Sorting algorithms                                                                                                  
+  - Greedy        
+  - Backtracking
+  - Dynamic Programming
+                                                                                                                        
+### Data Structures
+  - ArrayList
+  - LinkedList                                                                                              
+  - HashMap 
+  - HashSet
+  - Stacks 
+  - Queues
+  - Heaps (PriorityQueue)
+  - Binary Trees / BST                                                                                                  
+  - Tries
+  - Graphs                                                                                                              
+                  
+### Problem Types                                                                                                     
+  - Matrix / 2D Grid
+  - Intervals
+
+### Database (SQL)
