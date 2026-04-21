@@ -202,40 +202,38 @@ List of things that will be covered
 - Command
 
 
-## 5. Problem-Solving 
-### Foundations
-  - Big O / Complexity Analysis                                                                                         
-  - Arrays        
-  - Strings *** 
-  - Math
-                                                                                                                        
-### Techniques
-  - Two Pointers                                                                                                        
-  - Sliding Window
-  - Prefix Sum
-  - Binary Search
-  - Recursion                                                                                                           
-  - Bit Manipulation
-  - Sorting algorithms                                                                                                  
-  - Greedy        
-  - Backtracking
-  - Dynamic Programming
-                                                                                                                        
-### Data Structures
-  - ArrayList
-  - LinkedList                                                                                              
-  - HashMap 
-  - HashSet
-  - Stacks 
-  - Queues
-  - Heaps (PriorityQueue)
-  - Binary Trees / BST                                                                                                  
-  - Tries
-  - Graphs                                                                                                              
-                  
-### Problem Types                                                                                                     
-  - Matrix / 2D Grid
-  - Intervals
+## 5. Problem-Solving Array
+1. Array
+2. String
+3. Hash Table
+4. Math
+5. Sorting
+6. Two Pointers
+7. Sliding Window
+8. Binary Search
+9. Stack
+10. Queue
+11. Linked List
+12. Doubly Linked List
+13. Recursion
+14. Tree
+15. Binary Tree
+16. Matrix
+17. Depth First Search
+18. Breadth First Search
+19. Greedy
+20. Heap (Priority Queue)
+21. Bit Manipulation
+22. Backtracking
+23. Dynamic Programming
+24. Divide and Conquer
+25. Merge Sort
+26. Trie
+27. String Matching
+28. Shortest Path
+29. Segment Tree
+30. Iterator
+31. Concurrency
 
 ## 6. Database (SQL) with PostgreSQL
 
