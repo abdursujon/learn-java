@@ -7,221 +7,192 @@ List of things that will be covered
 ## 1. Fundamentals of java
 
 ### chapter1_basics/
-- Variables.java x
-- DataTypes.java x
-- Operators.java x
-- TypeCasting.java x
-- NamingConventions.java x
-- MainMethod.java x
-- Vars.java x
+- Variables x
+- DataTypes x
+- Operators x
+- TypeCasting x
+- NamingConventions x
+- MainMethod x
+- Vars x
 
 ### chapter2_control_flow/
-- ConditionalStatements.java
-- TernaryOperator.java
-- Loops.java
-- InstanceOf.java
+- ConditionalStatements
+- TernaryOperator
+- Loops x
+- InstanceOf
 
 ### chapter3_arrays/
-- OneDimentionalArray.java
-- TwoDimentionalArray.java
-- JavaArraysClass.java
+- OneDimensionalArray 
+- TwoDimensionalArray
+- JavaArraysClass
 
 ### chapter4_strings/
-- Strings.java
-- StringBuilder.java
-- StringBuffer.java
-- RegularExpression.java
+- Strings
+- StringBuilder
+- StringBuffer
+- RegularExpression
+- StringAlgorithms and Techniques to solve problems 
 
 ### chapter5_methods/
-- Methods.java
-- Scope.java
-- Recursion.java
-- VarArgs.java
-- DefaultMethods.java
-- StaticMethods.java
+- Methods
+- Scope
+- Recursion
+- VarArgs
+- DefaultMethods
+- StaticMethods
 
 ### chapter6_input_output/
-- ScannerClass.java
-- InputOutput.java
-- PrintFormatting.java
-- DateTimeAPI.java
+- ScannerClass
+- InputOutput
+- PrintFormatting
+- DateTimeAPI
 
 ### chapter7_utility_classes/
-- MathClass.java
-- RandomClass.java
-- PackagesImports.java
+- MathClass
+- RandomClass
+- PackagesImports
 
 ### chapter8_classes/
-- Classes.java
-- Objects.java
-- AbstractClasses.java
-- Interfaces.java
-- Enums.java
-- NestedClasses.java
-- AnonymousClasses.java
+- Classes
+- Objects
+- AbstractClasses
+- Interfaces
+- Enums
+- NestedClasses
+- AnonymousClasses
 
 ### chapter9_oop_principles/
-- Encapsulation.java
-- Inheritance.java
-- Polymorphism.java
-- Abstraction.java
-- AccessModifiers.java
-- StaticKeyword.java
-- FinalKeyword.java
-- SuperKeyword.java
-- OverloadingOverriding.java
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- AccessModifiers
+- StaticKeyword
+- FinalKeyword
+- SuperKeyword
+- OverloadingOverriding
 
 ### chapter10_object_class/
-- ObjectClass.java
-- EqualsHashCode.java
-- NullPointer.java
-- WrapperClasses.java
-- AutoboxingUnboxing.java
-- Cloning.java
-- Immutability.java
+- ObjectClass
+- EqualsHashCode
+- NullPointer
+- WrapperClasses
+- AutoboxingUnboxing
+- Cloning
+- Immutability
 
 ### chapter11_exceptions/
-- Exceptions.java
-- TryCatchFinally.java
-- ThrowThrows.java
-- CustomExceptions.java
+- Exceptions
+- TryCatchFinally
+- ThrowThrows
+- CustomExceptions
 
 ### chapter12_collections/
-- Collections.java
-- Generics.java
-- Comparable.java
-- Comparator.java
+- Collections
+- Generics
+- Comparable
+- Comparator
 - Iterator 
 
 ### chapter13_functional/
-- Lambda.java
-- FunctionalInterfaces.java
-- MethodReferences.java
-- Streams.java
-- OptionalClass.java
+- Lambda
+- FunctionalInterfaces
+- MethodReferences
+- Streams
+- OptionalClass
 
 ### chapter14_file_handling/
-- FileHandling.java
-- Serialization.java
-- NIO.java 
+- FileHandling
+- Serialization
+- NIO
 
 ### chapter15_advanced/
-- Annotations.java
-- GarbageCollection.java
-- Multithreading.java
-- Reflection.java 
-- Concurrency.java 
+- Annotations
+- GarbageCollection
+- Multithreading
+- Reflection
+- Concurrency
 
 ## 2. Data Structures
-
-### chapter1_arrays/
-- ArrayList.java
-- JavaArrayClass.java
-
-### chapter2_strings/
-- StringAlgorithms.java
-
-### chapter3_linked_lists/
-- LinkedList
-- SinglyLinkedList.java
-- DoublyLinkedList.java
-- CircularLinkedList.java
-
-### chapter4_stacks_queues/
-- Stack.java
-- Queue.java
-- ArrayDeque.java
-- PriorityQueue.java
-- CircularQueue.java
-
-### chapter5_hashing/
-- HashSet.java
-- LinkedHashSet.java
-- TreeSet.java
-- HashMap.java
-- LinkedHashMap.java
-- TreeMap.java
-- HashingConcepts.java
-
-### chapter6_trees/
-- BinaryTree.java
-- BinarySearchTree.java
-- TreeTraversals.java
-- BalancedTrees.java
-- NaryTree.java
-
-### chapter7_heaps/
-- MinHeap.java
-- MaxHeap.java
-- HeapOperations.java
-
-### chapter8_tries/
-- Trie.java
-- TrieOperations.java
-
-### chapter9_graphs/
-- GraphRepresentation.java
-- AdjacencyList.java
-- AdjacencyMatrix.java
-- BFS.java
-- DFS.java
-- WeightedGraph.java
-
-### chapter10_advanced/
-- UnionFind.java
-- SegmentTree.java
-- FenwickTree.java
-- LRUCache.java
-- BloomFilter.java
+1. Array (One Dimentional / Two Dimentional / Arrays) revisit 
+2. ArrayList 
+3. LinkedList 
+4. CircularLinkedList
+5. HashSet 
+6. LinkedHashSet 
+7. TreeSet
+8. HashMap 
+9. LinkedHashMap 
+10. TreeMap 
+11. HashingConcepts
+13. Stack 
+14. Queue 
+15. ArrayDequeue 
+16. PriorityQueue 
+17. CircularQueue 
+18. BinarySearchTree
+19. TreeTraversals
+20. BalancedTrees
+21. NaryTree
+22. MinHeap
+23. MaxHeap 
+24. Trie
+25. Graph
+    - GraphRepresentation
+    - AdjacencyList
+    - AdjacencyMatrix
+    - BFS
+    - DFS
+    - WeightedGraph
 
 ## 3. Algorithms
 
-chapter1_searching/                                                                                                   
+### chapter1_searching/                                                                                                   
    
-  - LinearSearch.java                                                                                                   
-  - BinarySearch.java
-  - BinarySearchVariants.java
+  - LinearSearch                                                                                                   
+  - BinarySearch
+  - BinarySearchVariants
 
-  chapter2_sorting/
+### chapter2_sorting/
 
-  - BubbleSort.java                                                                                                     
-  - InsertionSort.java
-  - MergeSort.java                                                                                                      
-  - QuickSort.java
+  - BubbleSort                                                                                                     
+  - InsertionSort
+  - MergeSort                                                                                                      
+  - QuickSort
 
-  chapter3_recursion/                                                                                                   
+### chapter3_recursion/                                                                                                   
    
-  - RecursionBasics.java                                                                                                
-  - Subsets.java  
-  - Permutations.java
+  - RecursionBasics                                                                                                
+  - Subsets  
+  - Permutations
 
-  chapter4_two_pointers_sliding_window/
+### chapter4_two_pointers_sliding_window/
 
-  - TwoPointers.java
-  - SlidingWindowFixed.java
-  - SlidingWindowVariable.java                                                                                          
-  - FastSlowPointers.java
-                                                                                                                        
-  chapter5_bit_manipulation/
+  - TwoPointers
+  - SlidingWindowFixed
+  - SlidingWindowVariable                                                                                          
+  - FastSlowPointers
 
-  - BitBasics.java
-  - XORProblems.java
-                                                                                                                        
-  chapter6_tree_algorithms/
-                                                                                                                        
-  - TreeTraversals.java
-  - BSTOperations.java
-                                                                                                                        
-  chapter7_graph_algorithms/
-                                                                                                                        
-  - BFS.java      
-  - DFS.java
+### chapter5_bit_manipulation/
 
-  chapter8_dynamic_programming/
+  - BitBasics
+  - XORProblems
 
-  - DPBasics.java
-  - MemoizationVsTabulation.java
-  - CoinChange.java  
+### chapter6_tree_algorithms/
+                                                                                                                        
+  - TreeTraversals
+  - BSTOperations
+
+### chapter7_graph_algorithms/
+                                                                                                                        
+  - BFS      
+  - DFS
+
+### chapter8_dynamic_programming/
+
+  - DPBasics
+  - MemoizationVsTabulation
+  - CoinChange  
 
 ## 4. Design Patterns
 - MVC
@@ -230,12 +201,8 @@ chapter1_searching/
 - Singleton
 - Command
 
-## 5. Spring Boot and Testing
 
-A Link of practical implementation of Spring Boot Will be provided Soon.
-
-
-## 6. Problem-Solving 
+## 5. Problem-Solving 
 ### Foundations
   - Big O / Complexity Analysis                                                                                         
   - Arrays        
@@ -270,4 +237,8 @@ A Link of practical implementation of Spring Boot Will be provided Soon.
   - Matrix / 2D Grid
   - Intervals
 
-### Database (SQL)
+## 6. Database (SQL) with PostgreSQL
+
+## 7. Spring Boot and Testing Project 
+
+A Link of practical implementation of Spring Boot Will be provided Soon.
