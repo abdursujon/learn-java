@@ -16,16 +16,15 @@ List of things that will be covered
 - Vars x
 
 ### chapter2_control_flow/
-- ConditionalStatements
-- TernaryOperator
+- ConditionalStatements x
+- TernaryOperator x
 - Loops x
-- InstanceOf
+- InstanceOf x
 
 ### chapter3_arrays/
 - OneDimensionalArray 
 - TwoDimensionalArray
 - JavaArraysClass
-
 ### chapter4_strings/
 - Strings
 - StringBuilder
