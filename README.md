@@ -22,12 +22,12 @@ List of things that will be covered
 - InstanceOf x
 
 ### chapter3_arrays/
-- OneDimensionalArray 
-- TwoDimensionalArray
-- JavaArraysClass
+- OneDimensionalArray x
+- TwoDimensionalArray x
+- JavaArraysClass x
 ### chapter4_strings/
-- Strings
-- StringBuilder
+- Strings x
+- StringBuilder x
 - StringBuffer
 - RegularExpression
 - StringAlgorithms and Techniques to solve problems 
@@ -111,6 +111,15 @@ List of things that will be covered
 - Multithreading
 - Reflection
 - Concurrency
+  Threads (creating, starting, stopping)
+  Runnable / Callable
+  synchronized keyword
+  volatile keyword
+  ExecutorService / ThreadPool
+  Future / CompletableFuture
+  Race conditions / deadlocks
+  wait() / notify()
+  Lock / ReentrantLock
 
 ## 2. Data Structures
 1. Array (One Dimentional / Two Dimentional / Arrays) revisit 
