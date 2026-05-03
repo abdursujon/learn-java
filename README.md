@@ -25,12 +25,12 @@ List of things that will be covered
 - OneDimensionalArray x
 - TwoDimensionalArray x
 - JavaArraysClass x
+
 ### chapter4_strings/
 - Strings x
 - StringBuilder x
-- StringBuffer
+- StringBuffer x 
 - RegularExpression
-- StringAlgorithms and Techniques to solve problems 
 
 ### chapter5_methods/
 - Methods
@@ -210,38 +210,43 @@ List of things that will be covered
 - Command
 
 
-## 5. Problem-Solving Array
-1. Array
-2. String
-3. Hash Table
-4. Math
-5. Sorting
-6. Two Pointers
+## 5. Problem-Solving Patterns
+
+### Highest Priority
+1. Array Manipulation
+2. String Manipulation
+3. HashMap Manipulation
+4. HashSet Manipulation
+5. Two Pointers or Iterators
+6. Fast and Slow Pointers
 7. Sliding Window
 8. Binary Search
-9. Stack
-10. Queue
-11. Linked List
-12. Doubly Linked List
-13. Recursion
-14. Tree
-15. Binary Tree
-16. Matrix
-17. Depth First Search
-18. Breadth First Search
-19. Greedy
-20. Heap (Priority Queue)
-21. Bit Manipulation
-22. Backtracking
-23. Dynamic Programming
-24. Divide and Conquer
-25. Merge Sort
-26. Trie
-27. String Matching
-28. Shortest Path
-29. Segment Tree
-30. Iterator
-31. Concurrency
+9. Modified Binary Search
+10. Sorting
+11. Math
+12. Stack
+13. Queue
+14. Recursion
+15. Merge Intervals
+16. Tree BFS
+17. Tree DFS
+18. Greedy
+19. Top K Elements
+20. Backtracking
+21. Dynamic Programming
+
+### Lower Priority
+22. Cyclic Sort
+23. In-place Reversal of Linked List
+24. Subsets
+25. Two Heaps0
+26. K-way Merge
+27. Matrix
+28. Topological Sort
+29. Divide and Conquer
+30. Shortest Path
+31. Bit Manipulation
+
 
 ## 6. Database (SQL) with PostgreSQL
 
