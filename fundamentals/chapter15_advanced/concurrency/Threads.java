@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Threads in Java
- *
+ * <p>
  * 1. Extending Thread class
  * 2. Implementing Runnable interface
  * 3. Thread.sleep(ms)
@@ -15,11 +15,11 @@ import java.util.*;
  * 8. Thread.currentThread()
  */
 public class Threads {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 1. Extending Thread class
-        class MyThread extends Thread{
+        class MyThread extends Thread {
             // Override Thread run method
-            public void run(){
+            public void run() {
                 System.out.println("Thread running: " + getName());
             }
         }
@@ -33,8 +33,8 @@ public class Threads {
         Thread t1 = new Thread(r);
         t1.start();
 
-        class MyRunnable implements Runnable{
-            public void run(){
+        class MyRunnable implements Runnable {
+            public void run() {
                 System.out.println("Runnable running: " + Thread.currentThread().getName());
             }
         }
@@ -45,7 +45,7 @@ public class Threads {
             String name;
         }
 
-        class Dog extends Animal implements Runnable{
+        class Dog extends Animal implements Runnable {
 
             @Override
             public void run() {
