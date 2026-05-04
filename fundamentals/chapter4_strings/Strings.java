@@ -1,19 +1,19 @@
 import java.util.*;
 /**
- * CREATION / INFO
+ * Creation/ Info
  * 1. length()
  * 2. isEmpty() / isBlank()
  * 3. charAt(index)
  * 4. indexOf(str) / lastIndexOf(str)
  * 5. contains(str)
  *
- * COMPARISON
+ * Comparison
  * 6. equals(str) / equalsIgnoreCase(str)
  * 7. compareTo(str) / compareToIgnoreCase(str)
  * 8. startsWith(str) / endsWith(str)
  * 9. matches(regex)
  *
- * TRANSFORMATION
+ * Transformation
  * 10. toUpperCase() / toLowerCase()
  * 11. trim() / strip()
  * 12. replace(old, new) / replaceAll(regex, new)
@@ -21,12 +21,12 @@ import java.util.*;
  * 14. repeat(n)
  * 15. String.format(template, args)
  *
- * SPLIT / JOIN
+ * Split / join
  * 16. split(regex)
  * 17. String.join(delimiter, elements)
  * 18. toCharArray()
  *
- * CONVERSION
+ * Conversion
  * 19. String.valueOf(x)
  * 20. Integer.parseInt(str) / Double.parseDouble(str)
  */

@@ -30,11 +30,10 @@ List of things that will be covered
 - Strings x
 - StringBuilder x
 - StringBuffer x 
-- RegularExpression
+- RegularExpression x
 
 ### chapter5_methods/
 - Methods
-- Scope
 - Recursion
 - VarArgs
 - DefaultMethods
