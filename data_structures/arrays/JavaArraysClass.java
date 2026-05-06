@@ -1,4 +1,4 @@
-package chapter3_arrays;
+package arrays;
 
 import java.util.Arrays;
 
@@ -41,9 +41,9 @@ public class JavaArraysClass{
         int[] arr6 = Arrays.copyOfRange(arr5, 2, 8);
         System.out.println(Arrays.toString(arr6));
 
-        // return index of an element#
         Arrays.sort(arr6);
         System.out.println(Arrays.toString(arr6));
+        // return index of an element
         System.out.println(Arrays.binarySearch(arr6, 65));
 
         int sum = Arrays.stream(arr6).sum();

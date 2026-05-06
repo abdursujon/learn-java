@@ -1,4 +1,4 @@
-package chapter3_arrays;
+package arrays;
 
 import java.util.Arrays;
 
@@ -31,9 +31,10 @@ public class TwoDimensionalArray {
         System.out.println(Arrays.deepToString(items));
 
         // by doing new String[][] we auto declare the size of the array
-        String[][] cricket = new String[][]
-                {{"6 balls = an over", "If the ball is over the waist height, it is a no ball"},
-                {"Jos Butler is my favourite player", "Virat Kohli is a good player too"}};
+        String[][] cricket = new String[][]{
+                {"6 balls = an over", "If the ball is over the waist height, it is a no ball"},
+                {"Jos Butler is my favourite player", "Virat Kohli is a good player too"}
+        };
         System.out.println(Arrays.deepToString(cricket));
 
     }

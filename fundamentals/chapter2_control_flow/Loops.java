@@ -11,7 +11,7 @@ public class Loops {
       nums2[i] = nums[i] / 2;
     }
 
-    System.out.println(Arrays.toString(nums2));
+    System.out.println(arrays.toString(nums2));
 
     // 2. enhanced for loop
     for (int n : nums2) {

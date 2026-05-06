@@ -21,7 +21,7 @@ List of things that will be covered
 - Loops x
 - InstanceOf x
 
-### chapter3_arrays/
+### arrays/
 - OneDimensionalArray x
 - TwoDimensionalArray x
 - JavaArraysClass x
@@ -33,16 +33,16 @@ List of things that will be covered
 - RegularExpression x
 
 ### chapter5_methods/
-- Methods
-- Recursion
-- VarArgs
-- DefaultMethods
-- StaticMethods
+- Methods x 
+- Recursion x
+- VarArgs x
+- DefaultMethods x
+- StaticMethods x
 
 ### chapter6_input_output/
-- ScannerClass
-- InputOutput
-- PrintFormatting
+- ScannerClass x
+- InputOutput x
+- PrintFormatting x
 - DateTimeAPI
 
 ### chapter7_utility_classes/
@@ -121,36 +121,54 @@ List of things that will be covered
   Lock / ReentrantLock
 
 ## 2. Data Structures
-1. Array (One Dimentional / Two Dimentional / Arrays) revisit 
-2. ArrayList 
-3. LinkedList 
-4. CircularLinkedList
-5. HashSet 
-6. LinkedHashSet 
-7. TreeSet
-8. HashMap 
-9. LinkedHashMap 
-10. TreeMap 
-11. HashingConcepts
-13. Stack 
-14. Queue 
-15. ArrayDequeue 
-16. PriorityQueue 
-17. CircularQueue 
-18. BinarySearchTree
-19. TreeTraversals
-20. BalancedTrees
-21. NaryTree
-22. MinHeap
-23. MaxHeap 
-24. Trie
-25. Graph
+## Built-in Interfaces
+1. List
+2. Set
+3. Map
+4. Queue
+5. Deque
+6. Iterable
+7. Collection
+8. SortedSet
+9. NavigableSet
+10. SortedMap
+11. NavigableMap
+
+## Built-in Data Structures 
+1. Array (1D / 2D) x
+2. ArrayList x
+3. LinkedList x
+4. HashSet x
+5. LinkedHashSet x
+6. TreeSet x
+7. HashMap
+8. LinkedHashMap
+9. TreeMap
+10. Stack x
+12. ArrayDeque
+13. PriorityQueue
+
+---
+
+## Custom Data Structures)
+1. CircularQueue
+2. CircularLinkedList
+2. Graph
     - GraphRepresentation
     - AdjacencyList
     - AdjacencyMatrix
     - BFS
     - DFS
     - WeightedGraph
+2. Binary Search Tree (BST)
+3. Tree Traversals (BFS / DFS on trees)
+4. Balanced Trees (AVL / Red-Black concepts)
+5. N-ary Tree
+6. Min Heap
+7. Max Heap
+8. Trie
+
+---
 
 ## 3. Algorithms
 
