@@ -1,9 +1,11 @@
+package important_classes;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class IteratorClassInJava {
+public class Iterators {
 
     public static void main(String[] args) {
 

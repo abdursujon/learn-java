@@ -1,27 +1,27 @@
 import java.util.Arrays;
 import java.util.Map;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.stream.Stream;
 
 /**
- * 1. map.put(key, value)            - add entry
- * 2. map.get(key)                   - get value by key
- * 3. map.containsKey(key)           - check if key exists
- * 4. map.containsValue(value)       - check if value exists
- * 5. map.remove(key)                - remove entry by key
- * 6. map.size()                     - number of entries
- * 7. map.isEmpty()                  - check if empty
- * 8. map.keySet()                   - get all keys
- * 9. map.values()                   - get all values
- * 10. map.entrySet()                - get all key-value pairs
- * 11. map.getOrDefault(key, default)- get value or default if key missing
+ * 1. map.put(key, value)
+ * 2. map.get(key)
+ * 3. map.containsKey(key)
+ * 4. map.containsValue(value)
+ * 5. map.remove(key)
+ * 6. map.size()
+ * 7. map.isEmpty()
+ * 8. map.keySet()
+ * 9. map.values()
+ * 10. map.entrySet()
+ * 11. map.getOrDefault(key, default)
  */
-public class HashMaps {
+public class LinkedHashMaps {
 
     public Map<String, Map<Integer, String>> universityOfSalfordDegreeDetails() {
-        Map<String, Map<Integer, String>> details = new HashMap<>();
-        Map<Integer, String> courseMap = new HashMap<>();
+        Map<String, Map<Integer, String>> details = new LinkedHashMap<>();
+        Map<Integer, String> courseMap = new LinkedHashMap<>();
 
         String[] computerScienceYearOne = {
                 "Programming 1", "Programming 2", "Linux and Computer System",
@@ -54,7 +54,6 @@ public class HashMaps {
             }
         }
         System.out.println("Total Course: " + allCourse.length);
-        System.out.println(courseMap);
 
         details.put("Computer Science", courseMap);
         System.out.println(courseMap.get(0));
