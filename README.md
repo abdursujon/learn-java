@@ -27,7 +27,7 @@ List of things that will be covered
 - JavaArraysClass x
 
 ### chapter4_strings/
-- Strings x
+- StringInJava x
 - StringBuilder x
 - StringBuffer x 
 - RegularExpression x
@@ -43,23 +43,31 @@ List of things that will be covered
 - ScannerClass x
 - InputOutput x
 - PrintFormatting x
-- DateTimeAPI
+- DateTimeAPI x
 
 ### chapter7_utility_classes/
-- MathClass
-- RandomClass
-- PackagesImports
+- Maths x
+- Randoms x
 
-### chapter8_classes/
-- Classes
-- Objects
-- AbstractClasses
-- Interfaces
-- Enums
-- NestedClasses
-- AnonymousClasses
+### chapter8_typeof_classes/
+- Build In Object Class x
+- Normal Classes x
+- Abstract x
+- Interfaces x
+- Enums x
+- Nested x
+- Anonymous x
+- Record x
 
-### chapter9_oop_principles/
+### chapter9_object_behavior/
+- EqualsHashCode
+- NullPointer
+- WrapperClasses
+- AutoboxingUnboxing
+- Cloning
+- Immutability
+
+### chapter10_oop_principles/
 - Encapsulation
 - Inheritance
 - Polymorphism
@@ -69,15 +77,6 @@ List of things that will be covered
 - FinalKeyword
 - SuperKeyword
 - OverloadingOverriding
-
-### chapter10_object_class/
-- ObjectClass
-- EqualsHashCode
-- NullPointer
-- WrapperClasses
-- AutoboxingUnboxing
-- Cloning
-- Immutability
 
 ### chapter11_exceptions/
 - Exceptions
@@ -96,7 +95,6 @@ List of things that will be covered
 - Lambda
 - FunctionalInterfaces
 - MethodReferences
-- Streams
 - OptionalClass
 
 ### chapter14_file_handling/
@@ -121,19 +119,6 @@ List of things that will be covered
   Lock / ReentrantLock
 
 ## 2. Data Structures
-## Built-in Interfaces
-1. List
-2. Set
-3. Map
-4. Queue
-5. Deque
-6. Iterable
-7. Collection
-8. SortedSet
-9. NavigableSet
-10. SortedMap
-11. NavigableMap
-
 ## Built-in Data Structures 
 1. Array (1D / 2D) x
 2. ArrayList x
@@ -141,12 +126,13 @@ List of things that will be covered
 4. HashSet x
 5. LinkedHashSet x
 6. TreeSet x
-7. HashMap
-8. LinkedHashMap
-9. TreeMap
+7. HashMap x
+8. LinkedHashMap x
+9. TreeMap X
 10. Stack x
-12. ArrayDeque
-13. PriorityQueue
+12. ArrayDeque x
+13. PriorityQueue x
+14. ArrayBlockingQueue
 
 ---
 
@@ -230,7 +216,7 @@ List of things that will be covered
 ## 5. Problem-Solving Patterns
 
 ### Highest Priority
-1. Array Manipulation
+1. Array Manipulation 1
 2. String Manipulation
 3. HashMap Manipulation
 4. HashSet Manipulation

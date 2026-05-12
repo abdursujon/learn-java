@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Matrix {
-    // LeetCode 1260. Shift 2D Grid
+    // 1260. Shift 2D Grid
     public static List<List<Integer>> shiftGrid(int[][] grid, int k){
         int m = grid.length;
         int n = grid[0].length;
