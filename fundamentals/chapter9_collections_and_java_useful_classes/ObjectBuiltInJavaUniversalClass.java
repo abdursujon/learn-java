@@ -10,7 +10,7 @@
  10. notify()
  11. notifyAll()
  */
-public class Objects{
+public class ObjectBuiltInJavaUniversalClass {
     private class Person implements Cloneable{
         String name;
         int age;
@@ -40,7 +40,7 @@ public class Objects{
 
     }
     public static void main(String[] args) throws CloneNotSupportedException{
-        Objects o = new Objects();
+        ObjectBuiltInJavaUniversalClass o = new ObjectBuiltInJavaUniversalClass();
         Person p1 = o.new Person("Sujon", 22);
 
         // 1. toString()
