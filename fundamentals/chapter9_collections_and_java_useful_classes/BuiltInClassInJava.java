@@ -1,20 +1,30 @@
 import java.util.Scanner;
 
-public class Class {
+public class BuiltInClassInJava {
 
     interface Animals {
         void animalSound();
     }
 
-    class Dog implements Animals{
-        void animalSound(){
+    static class Dog implements Animals{
+        public void animalSound(){
             System.out.println("Woof Woof");
         }
     }
 
-    public static void main(String[] args){
+    static class Cat implements Animals{
+        public void animalSound(){
+            System.out.println("Meow Meow");
+        }
+    }
+
+    public static void main(String[] args) throws Exception{
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter animal type: ");
+        String input = scan.nextLine();
 
+       Class<?> typeOfClass = Class.forName("BuiltInClassInJava$" + input);
+       Animals animal = (Animals) typeOfClass.getDeclaredConstructor().newInstance();
+       animal.animalSound();
     }
 }

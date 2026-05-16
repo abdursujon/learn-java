@@ -1,15 +1,17 @@
+import java.util.*;
+
 public class ArrayManipulation {
     // 35. Search Insert Position
     public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
-        while(left <= right){
+        while (left <= right) {
             int mid = (left + right) / 2;
-            if(nums[mid] == target){
+            if (nums[mid] == target) {
                 return mid;
-            } else if(target < nums[mid]){
+            } else if (target < nums[mid]) {
                 right = mid - 1;
-            } else{
+            } else {
                 left = mid + 1;
             }
         }
@@ -18,16 +20,102 @@ public class ArrayManipulation {
 
     public static int maxProfit(int[] prices) {
         int maxPro = 0;
-        for(int i = 0; i < prices.length; i++){
-           for(int j = i + 1; j < prices.length; j++){
-              maxPro =  Math.max(maxPro, prices[j] - prices[i]);
-           }
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i + 1; j < prices.length; j++) {
+                maxPro = Math.max(maxPro, prices[j] - prices[i]);
+            }
         }
         return maxPro;
     }
 
-    public static void main(String[] args){
-    System.out.println(maxProfit(new int[] {7,6,4,3,1}));
-    System.out.println(maxProfit(new int[] {7,1,5,3,6,4}));
+    // 283. Move Zeroes
+    public static void moveZeroes(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+
+        for (int num : nums) {
+            if (num != 0) {
+                list.add(num);
+            }
+        }
+
+        int i = 0;
+        while (i < list.size()) {
+            nums[i] = list.get(i);
+            i++;
+        }
+
+        for (int j = list.size(); j < nums.length; j++) {
+            nums[j] = 0;
+        }
+
+        System.out.println(Arrays.toString(nums));
+    }
+
+    // 169. Majority Element
+    public static int majorityElement(int[] nums) {
+        int count = 0;
+        int major = 0;
+
+        if (nums.length == 1) {
+            return nums[0];
+        }
+
+        for (int i : nums) {
+            for (int j : nums) {
+                if (i == j) {
+                    count++;
+                }
+            }
+
+            if (count > nums.length / 2) {
+                return i;
+            }
+            count = 0;
+        }
+
+        return major;
+    }
+
+    public static int majorityElementAlterNativeSolution(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length / 2];
+    }
+
+    // 349. Intersection of two arrays
+    public static int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> seen = new HashSet<>();
+        Set<Integer> intersectSet = new HashSet<>();
+        for(int n: nums1){
+            seen.add(n);
+        }
+
+        for(int n: nums2){
+            if(seen.contains(n)){
+                intersectSet.add(n);
+            }
+        }
+
+        int[] result = new int[intersectSet.size()];
+        int i = 0;
+        for(int n: intersectSet){
+            result[i++] = n;
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maxProfit(new int[]{7, 6, 4, 3, 1}));
+        System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+
+        // 283. Move Zeroes
+        moveZeroes(new int[]{0, 0, 0, 7, 1, 5, 3, 6, 4});
+
+        // 169. Majority Element
+        System.out.println(majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2}));
+        System.out.println(majorityElement(new int[]{3, 3, 4}));
+        System.out.println(majorityElementAlterNativeSolution(new int[]{3, 3, 4}));
+
+        intersection(new int[] {3,3,4}, new int[] {3,3,4});
     }
 }

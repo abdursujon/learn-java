@@ -25,7 +25,8 @@ import java.util.Arrays;
  * 19. addAll(list)
  */
 public class ArrayLists {
-    public static void arrayListInJava(){
+
+    public static void main(String[] args){
         List<Integer> evenList = new ArrayList<>();
         List<Integer> oddList = new ArrayList<>();
 
@@ -95,9 +96,5 @@ public class ArrayLists {
         System.out.println(oddList);
         oddList.clear();
         System.out.println(oddList);
-    }
-
-    public static void main(String[] args){
-        arrayListInJava();
     }
 }

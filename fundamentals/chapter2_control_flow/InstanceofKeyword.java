@@ -5,11 +5,11 @@ public class InstanceofKeyword{
             if(i instanceof String){
                 System.out.println(i);
             } else if(i instanceof Integer){
-                System.out.println("Integer number: " + i);
+                System.out.println("Instance of integer number: " + i);
             } else if(i instanceof Double ){
-                System.out.println("Double number: " + i);
+                System.out.println("Instance of double number: " + i);
             } else if(i instanceof Boolean){
-                System.out.println("Boolean " + i);
+                System.out.println("Instance of boolean " + i);
             }
         }
     }

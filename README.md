@@ -15,6 +15,32 @@ List of things that will be covered
 - MainMethod x
 - Vars x
 
+####  java.lang_auto_imported_classes
+String x
+Object x
+Math x
+System
+Integer x
+Long x
+Double x
+Boolean x
+Character x
+Float x
+Byte x
+Short x
+StringBuilder x
+StringBuffer x
+Thread
+Runnable
+Exception
+RuntimeException
+Error
+Class
+ClassLoader
+Number
+Enum x
+Record x
+
 ### chapter2_control_flow/
 - ConditionalStatements x
 - TernaryOperator x
@@ -50,7 +76,7 @@ List of things that will be covered
 - Randoms x
 
 ### chapter8_typeof_classes/
-- Build In Object Class x
+- Build In Object BuiltInClassInJava x
 - Normal Classes x
 - Abstract x
 - Interfaces x
@@ -59,7 +85,9 @@ List of things that will be covered
 - Anonymous x
 - Record x
 
-### chapter9_object_behavior/
+### chapter9_collections_and_java_useful_classes/
+
+### chapter10_object_behavior
 - EqualsHashCode
 - NullPointer
 - WrapperClasses
@@ -67,7 +95,7 @@ List of things that will be covered
 - Cloning
 - Immutability
 
-### chapter10_oop_principles/
+### chapter11_oop_principles/
 - Encapsulation
 - Inheritance
 - Polymorphism
@@ -78,18 +106,11 @@ List of things that will be covered
 - SuperKeyword
 - OverloadingOverriding
 
-### chapter11_exceptions/
+### chapter12_exceptions/
 - Exceptions
 - TryCatchFinally
 - ThrowThrows
 - CustomExceptions
-
-### chapter12_collections/
-- Collections
-- Generics
-- Comparable
-- Comparator
-- Iterator 
 
 ### chapter13_functional/
 - Lambda
@@ -102,7 +123,7 @@ List of things that will be covered
 - Serialization
 - NIO
 
-### chapter15_advanced/
+### chapter16_advanced/
 - Annotations
 - GarbageCollection
 - Multithreading

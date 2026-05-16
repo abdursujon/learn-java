@@ -22,7 +22,7 @@ public class Variables {
      * 6. Transient variable - skipped during serialization. Works as a information hiding mechanices.
      * Serialization = converting an object into a savable/sendable format (like bytes or a file), so you can store it or
      * send it over a network.
-     * Objects only exist in RAM — when your program stops, they're gone. Serialization lets you persist them and send them over to other networks.
+     * ObjectBuiltInJavaUniversalClass only exist in RAM — when your program stops, they're gone. Serialization lets you persist them and send them over to other networks.
      */
     transient String password = "password123";
 

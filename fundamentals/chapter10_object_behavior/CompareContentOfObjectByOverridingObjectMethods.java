@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * If we are given two object for example personA and personB we have no way of knowing if those object is the same person.
  * We can compare content of person to determine if both object are same by overriding equals and hashcode from java Object class.
@@ -11,6 +13,7 @@ public class CompareContentOfObjectByOverridingObjectMethods {
             this.age = age;
         }
 
+
         @Override
         public boolean equals(Object obj){
             if(this == obj) return true;
@@ -21,9 +24,17 @@ public class CompareContentOfObjectByOverridingObjectMethods {
 
         @Override
         public int hashCode(){
-            return ObjectBuiltInJavaUniversalClass.hash(name, age);
+            return Objects.hash(name, age);
         }
     }
 
-    public static void main(String[] args){}
+    public static void main(String[] args){
+        CompareContentOfObjectByOverridingObjectMethods compare = new CompareContentOfObjectByOverridingObjectMethods();
+        Person person = compare.new Person("Susan", 32);
+        Person person2 = compare.new Person("Susan", 32);
+        Person person3 = compare.new Person("Iron", 25);
+        System.out.println(person.equals(person2));
+        System.out.println(person2.equals(person2));
+        System.out.println(person2.equals(person3));
+    }
 }
