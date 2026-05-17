@@ -1,4 +1,4 @@
-// 1. BuiltInClassInJava name: PascalCase, example NamingConventions, BankAccount
+// 1. BuiltInClass name: PascalCase, example NamingConventions, BankAccount
 public class NamingConventions{
 
     // 2. variable names: camelCase
