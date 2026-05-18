@@ -97,5 +97,6 @@ public class WrapperClasses {
         System.out.println(Character.toLowerCase('A'));
         System.out.println(Character.getNumericValue('D'));
         System.out.println(Character.getNumericValue('9'));
+        System.out.println(Character.isLetterOrDigit('a'));
     }
 }

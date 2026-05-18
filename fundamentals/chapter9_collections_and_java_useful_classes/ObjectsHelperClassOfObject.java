@@ -1,2 +1,2 @@
-public class ObjectsClassInJava {
+public class ObjectsHelperClassOfObject {
 }

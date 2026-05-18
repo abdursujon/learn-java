@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.HashSet;
 
-public class Collection {
+public class CollectionsHelperClassOfCollection {
     // Given an array of items, return reverse of the list with non-repeating items
     public static List<Integer> nonRepeatingReverseList(int[] items){
         Set<Integer> set = new HashSet<>();
@@ -144,7 +144,7 @@ public class Collection {
 
         // 11. singletonList (create a list with exactly one item)
         List<Integer> single = Collections.singletonList(10);
-        Collection c = new Collection();
+        CollectionsHelperClassOfCollection c = new CollectionsHelperClassOfCollection();
         Person p = c.new Person("Sujon", 55);
         Object o = p;
         List<Object> singleObject = Collections.singletonList(o);

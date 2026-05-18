@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Abstract BuiltInClassInJava vs Interface:
+ * Abstract BuiltInClass vs Interface:
  *
- * Abstract BuiltInClassInJava:
+ * Abstract BuiltInClass:
  * - Can have both abstract (no body) and concrete (with body) methods
  * - Can have instance fields/variables
  * - A class can only extend ONE abstract class

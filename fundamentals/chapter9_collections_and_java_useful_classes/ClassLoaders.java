@@ -1,5 +1,4 @@
 import java.net.URL;
-import java.net.URLClassLoader;
 
 
 /**
@@ -18,7 +17,7 @@ public class ClassLoaders {
         System.out.println(classLoader);
 
         // 2. loadClass(className)  - load a class by name
-        Class<?> loadedClass = classLoader.loadClass("java.util.ArrayList");
+       Class<?> loadedClass = classLoader.loadClass("java.util.ArrayList");
         System.out.println(loadedClass.getName());
 
         // 3. getResourceAsStream(name)  - load a resource file as stream only works when the project has resource directory

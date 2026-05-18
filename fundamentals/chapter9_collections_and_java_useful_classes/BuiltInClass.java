@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Class {
+public class BuiltInClass {
 
     interface Animals {
         void animalSound();
@@ -23,7 +23,7 @@ public class Class {
         System.out.println("Enter animal type: ");
         String input = scan.nextLine();
 
-       java.lang.Class<?> typeOfClass = java.lang.Class.forName("Class$" + input);
+       java.lang.Class<?> typeOfClass = java.lang.Class.forName("BuiltInClass$" + input);
        Animals animal = (Animals) typeOfClass.getDeclaredConstructor().newInstance();
        animal.animalSound();
     }

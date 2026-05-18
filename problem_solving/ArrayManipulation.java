@@ -104,6 +104,55 @@ public class ArrayManipulation {
         return result;
     }
 
+    // 350. Intersection of two arrays ii
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        List<Integer> list = new ArrayList<>();
+
+        int i = 0; int j = 0;
+        while(i < nums1.length && j < nums2.length){
+            if(nums1[i] < nums2[j]){
+                i++;
+            } else if(nums1[i] > nums2[j]){
+                j++;
+            } else{
+                list.add(nums1[i]);
+                i++;
+                j++;
+            }
+        }
+
+        int[] ans = new int[list.size()];
+        int k = 0;
+        for(int n: list){
+            ans[k++] = n;
+        }
+
+        return ans;
+    }
+
+    // 414. Third Maximum number
+    public static int thirdMax(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        Arrays.sort(nums);
+
+        for(int n: nums){
+           if(!list.contains(n)){
+               list.add(n);
+           }
+        }
+        Collections.reverse(list);
+
+        if(list.size() == 1){
+            return list.getFirst();
+        } else if(list.size() == 2){
+            return Collections.max(list);
+        } else {
+            return list.get(2);
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println(maxProfit(new int[]{7, 6, 4, 3, 1}));
         System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
@@ -117,5 +166,8 @@ public class ArrayManipulation {
         System.out.println(majorityElementAlterNativeSolution(new int[]{3, 3, 4}));
 
         intersection(new int[] {3,3,4}, new int[] {3,3,4});
+
+        // 414. Third Maximum number
+        System.out.println(thirdMax(new int[] {2,2,3,1}));
     }
 }

@@ -35,7 +35,7 @@ Runnable
 Exception
 RuntimeException
 Error
-Class
+BuiltInClass
 ClassLoader
 Number
 Enum x
@@ -76,7 +76,7 @@ Record x
 - Randoms x
 
 ### chapter8_typeof_classes/
-- Build In Object BuiltInClassInJava x
+- Build In Object BuiltInClass x
 - Normal Classes x
 - Abstract x
 - Interfaces x
@@ -86,6 +86,13 @@ Record x
 - Record x
 
 ### chapter9_collections_and_java_useful_classes/
+- BuiltInClass x
+- ClassLoader x
+- Collections x
+- Iterators 
+- Object 
+- Objects 
+- Streams 
 
 ### chapter10_object_behavior
 - EqualsHashCode
@@ -113,10 +120,17 @@ Record x
 - CustomExceptions
 
 ### chapter13_functional/
-- Lambda
-- FunctionalInterfaces
-- MethodReferences
-- OptionalClass
+1. Generics       
+2. Lambda          
+3. Comparable
+4. Comparator
+5. Runnable
+6. Callable
+7. Predicate
+8. Consumer
+9. Supplier
+10. Method References
+11. Optional
 
 ### chapter14_file_handling/
 - FileHandling
@@ -242,6 +256,9 @@ Record x
 3. HashMap Manipulation
 4. HashSet Manipulation
 5. Two Pointers or Iterators
+- Five Easy 
+- Ten Medium 
+- Five Hard 
 6. Fast and Slow Pointers
 7. Sliding Window
 8. Binary Search
