@@ -14,7 +14,8 @@ List of things that will be covered
 - NamingConventions x
 - MainMethod x
 - Vars x
-
+- Wrapper Classes x
+- AutoboxingUnboxing x 
 ####  java.lang_auto_imported_classes
 String x
 Object x
@@ -89,29 +90,23 @@ Record x
 - BuiltInClass x
 - ClassLoader x
 - Collections x
-- Iterators 
-- Object 
-- Objects 
-- Streams 
+- Iterators x
+- Object x
+- Objects x
+- Streams x
 
 ### chapter10_object_behavior
 - EqualsHashCode
 - NullPointer
-- WrapperClasses
-- AutoboxingUnboxing
 - Cloning
 - Immutability
 
 ### chapter11_oop_principles/
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- AccessModifiers
-- StaticKeyword
-- FinalKeyword
-- SuperKeyword
-- OverloadingOverriding
+- Encapsulation x
+- inheritance x
+- Polymorphism x
+- Abstraction x
+- AccessModifiers, StaticKeyword, FinalKeyword, SuperKeyword, OverloadingOverriding
 
 ### chapter12_exceptions/
 - Exceptions

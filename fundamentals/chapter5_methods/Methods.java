@@ -39,7 +39,7 @@ public class Methods {
             if(neuronCount >= 86_000_000_000L){
                 return "Human";
             } else{
-                return "Animal";
+                return "Inheritance.Animal";
             }
         }
     }
