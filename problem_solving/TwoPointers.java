@@ -98,6 +98,18 @@ public class TwoPointers {
 
 
     // 5.
+    public static void reverseString(char[] s) {
+        int l = 0, r = s.length - 1;
+        char[] ans = new char[s.length];
+        while(l < s.length){
+            ans[l++] = s[r--];
+        }
+        l = 0;
+        for(char c: ans){
+            s[l++] = c;
+        }
+        System.out.println(Arrays.toString(ans));
+    }
     /*====================5 EASY LEETCODE END=======================*/
 
     /*====================10 MEDIUM LEETCODE START=======================*/
@@ -170,6 +182,8 @@ public class TwoPointers {
 
         // 4.
         // 5.
+        reverseString(new char[] {'h','e','l','l','o'});
+
         /*====================5 EASY LEETCODE END=======================*/
 
         /*====================10 MEDIUM LEETCODE START=======================*/
