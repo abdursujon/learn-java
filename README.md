@@ -16,6 +16,7 @@ List of things that will be covered
 - Vars x
 - Wrapper Classes x
 - AutoboxingUnboxing x 
+
 ####  java.lang_auto_imported_classes
 String x
 Object x
@@ -96,23 +97,46 @@ Record x
 - Streams x
 
 ### chapter10_object_behavior
-- EqualsHashCode
-- NullPointer
-- Cloning
-- Immutability
+- EqualsHashCode x
+- NullPointer x
+- Cloning x
+- Immutability x
 
 ### chapter11_oop_principles/
 - Encapsulation x
 - inheritance x
 - Polymorphism x
 - Abstraction x
-- AccessModifiers, StaticKeyword, FinalKeyword, SuperKeyword, OverloadingOverriding
+- AccessModifiers, StaticKeyword, FinalKeyword, SuperKeyword, OverloadingOverriding x
 
 ### chapter12_exceptions/
-- Exceptions
-- TryCatchFinally
-- ThrowThrows
-- CustomExceptions
+Must-know (daily use)
+1. TryCatchFinally x
+2. CheckedVsUnchecked x
+3. ThrowVsThrows x
+4. CommonRuntimeExceptions x
+5. TryWithResources
+6. ThrowableHierarchy
+7. CommonCheckedCompileTimeExceptions x
+8. ExceptionPropagation
+
+Important (frequent)
+9. CustomCheckedException
+10. CustomUncheckedException
+11. MultiCatch
+12. RethrowAndWrap
+13. ExceptionChaining
+
+Good to know (occasional)
+14. FinallyPitfalls
+15. ExceptionsInLambdas
+16. ExceptionsInConstructors
+17. ExceptionsInOverriding
+
+Niche (rare but worth knowing)
+18. ExceptionsInThreads
+19. SuppressedExceptions
+20. AssertionsVsExceptions
 
 ### chapter13_functional/
 1. Generics       

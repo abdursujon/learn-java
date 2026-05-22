@@ -113,8 +113,99 @@ public class TwoPointers {
     /*====================5 EASY LEETCODE END=======================*/
 
     /*====================10 MEDIUM LEETCODE START=======================*/
-    // 1.
-    // 2.
+    // 1.Longest Palindromic Substring (5)
+    public static String longestPalindrome(String s){
+        String ans = "";
+        int currLength = 0;
+        for(int i = 0; i < s.length(); i++){
+            // Try to grow the best palindrome by 2 (e.g., "a" → "aba", "bb" → "abba")
+            if(isPalindrome(s, i - currLength - 1, i)){
+                ans = s.substring(i - currLength - 1, i + 1);
+                currLength = currLength + 2;
+            }
+
+            // Otherwise try to grow by 1 (e.g., "a" → "bb", or first char "" → "a")
+            else if(isPalindrome(s, i - currLength, i)){
+                ans = s.substring(i - currLength, i+1);
+                currLength = currLength + 1;
+            }
+        }
+        return ans;
+    }
+
+    public static boolean isPalindrome(String s, int start, int end){
+        if(start < 0) return false;
+        while(start < end){
+            if(s.charAt(start++) != s.charAt(end--)) return false;
+        }
+        return true;
+    }
+    // 2. 3Sum (15)
+    // O(n3)
+    public static List<List<Integer>> threeSum(int[] nums) {
+       Arrays.sort(nums);
+       List<List<Integer>> threeSumList = new ArrayList<>();
+       List<Integer> inner = new ArrayList<>();
+
+       int n = nums.length;
+       int i = 0, j = i + 1, k = n - 1;
+
+       for(i = 0; i < n - 2; i++){
+           j = i + 1;
+           k = n - 1;
+
+           while(j < k){
+               int sum = nums[i] + nums[j] + nums[k];
+               if(sum == 0){
+                   inner.add(nums[i]);
+                   inner.add(nums[j]);
+                   inner.add(nums[k]);
+                   if(!threeSumList.contains(inner)){
+                       threeSumList.add(inner);
+                   }
+                   inner = new ArrayList<>();
+                   j++;
+                   k--;
+               } else if(sum < 0){
+                   j++;
+               } else{
+                   k--;
+               }
+           }
+       }
+
+       return threeSumList;
+
+    }
+
+    public static List<List<Integer>> threeSumTwo(int[] nums){
+        Arrays.sort(nums);
+        List<List<Integer>> threeSumList = new ArrayList<>();
+        int n = nums.length;
+
+        for(int i = 0; i < n - 2; i++){
+            if(i > 0 && nums[i] == nums[i - 1]) continue;
+            int j = i + 1;
+            int k = n - 1;
+
+            while(j < k){
+                int sum = nums[i] + nums[j] + nums[k];
+                if(sum == 0){
+                    threeSumList.add(List.of(nums[i], nums[j], nums[k]));
+                    j++;
+                    k--;
+                    while(j < k && nums[j] == nums[j - 1]) j++;
+                    while(j < k && nums[k] == nums[k + 1]) k--;
+                } else if(sum < 0){
+                    j++;
+                } else{
+                    k--;
+                }
+            }
+        }
+        return threeSumList;
+    }
+
     // 3.
     // 4.
     // 5.
@@ -189,6 +280,7 @@ public class TwoPointers {
         /*====================10 MEDIUM LEETCODE START=======================*/
         // 1.
         // 2.
+        System.out.println(threeSum(new int[] {1, -1, 0, 2, -2, 0}));
         // 3.
         // 4.
         // 5.
