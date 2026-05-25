@@ -7,9 +7,9 @@ import java.util.*;
  */
 public class TwoPointers {
 
-    /*====================5 EASY LEETCODE START=======================*/
+    /*====================EASY LEETCODE START=======================*/
 
-    // 1. Valid Palindrome (Leetcode 125)
+    // Valid Palindrome (Leetcode 125)
     public static boolean isPalindrome(String s){
         StringBuilder sb = new StringBuilder();
         for(char i: s.toCharArray()){
@@ -28,7 +28,7 @@ public class TwoPointers {
         return true;
     }
 
-    // 2. LinkedList Cycle (Leetcode 141)
+    // LinkedList Cycle (Leetcode 141)
     class ListNode{
         int val;
         ListNode next;
@@ -51,7 +51,7 @@ public class TwoPointers {
         return false;
     }
 
-    // 3. Intersection of Two Linked Lists (160)
+    // Intersection of Two Linked Lists (160)
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB){
         ListNode pointerA = headA;
         ListNode pointerB = headB;
@@ -70,7 +70,7 @@ public class TwoPointers {
         return null;
     }
 
-    // 4. Happy Number(202)
+    // Happy Number(202)
     public boolean isHappy(int n){
 
         // Floyd’s cycle detection starts
@@ -110,7 +110,54 @@ public class TwoPointers {
         }
         System.out.println(Arrays.toString(ans));
     }
-    /*====================5 EASY LEETCODE END=======================*/
+
+    public static String reverseVowels(String s) {
+        char[] sToChar = s.toCharArray();
+        int l = 0, r = sToChar.length - 1;
+        String vowels = "AEIOUaeiou";
+        System.out.println(vowels.indexOf("i")); // if index not found it returns - 1 else returns the correct index
+        while(l < r){
+            // continue until we find a vowel in sToChar from left
+            while( l < r && vowels.indexOf(sToChar[l]) == -1){
+                l++;
+            }
+
+
+            // continue until we find a vowel in sToChar in reverse order
+            while(l < r && vowels.indexOf(sToChar[r]) == -1){
+                r--;
+            }
+
+            // if we find vowel in either order we swap them around
+            char temp = sToChar[l];
+            sToChar[l] = sToChar[r];
+            sToChar[r] = temp;
+            l++;
+            r--;
+        }
+        String ans = new String(sToChar);
+        return ans;
+    }
+
+    //392. Is Subsequence
+    public boolean isSubsequence(String s, String t) {
+        StringBuilder sb = new StringBuilder();
+        char[] sCharacters = s.toCharArray();
+        char[] tCharacters = t.toCharArray();
+        int left = 0, right = 0;
+
+        for(right = 0; left < sCharacters.length && right < tCharacters.length; right++){
+            if(sCharacters[left] == tCharacters[right]){
+                sb.append(sCharacters[left]);
+                left++;
+            }
+        }
+
+        String subsequence = new String(sb);
+        return subsequence.equals(s);
+    }
+
+    /*==================== EASY LEETCODE END=======================*/
 
     /*====================10 MEDIUM LEETCODE START=======================*/
     // 1.Longest Palindromic Substring (5)
@@ -274,6 +321,7 @@ public class TwoPointers {
         // 4.
         // 5.
         reverseString(new char[] {'h','e','l','l','o'});
+        System.out.println(reverseVowels("ICECREAM"));
 
         /*====================5 EASY LEETCODE END=======================*/
 

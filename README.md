@@ -115,15 +115,20 @@ Must-know (daily use)
 2. CheckedVsUnchecked x
 3. ThrowVsThrows x
 4. CommonRuntimeExceptions x
-5. TryWithResources
+5. TryWithResources x
 6. ThrowableHierarchy
+![img.png](img.png)
 7. CommonCheckedCompileTimeExceptions x
 8. ExceptionPropagation
+When exception is not handled, exception are propagated upward (spread upward). So if we have three methods calling each other.
+For example, void a(){},  void b(){a()}, void c(){b()} here if c does not handle exception, jvm looks for exception in b, if not in 
+b, it looks in a, if not in a, looks for the main function. If main does not handle the exception either, program reaches the JVM default
+exceptions and through unchecked(Runtime) exception. 
 
 Important (frequent)
-9. CustomCheckedException
-10. CustomUncheckedException
-11. MultiCatch
+9. CustomCheckedException x
+10. CustomUncheckedException x
+11. MultiCatch x
 12. RethrowAndWrap
 13. ExceptionChaining
 
@@ -270,14 +275,11 @@ Niche (rare but worth knowing)
 ## 5. Problem-Solving Patterns
 
 ### Highest Priority
-1. Array Manipulation 1
-2. String Manipulation
+1. Array Manipulation (1, 2, 3, 4, 5)
+2. String Manipulation (1, 2)
 3. HashMap Manipulation
 4. HashSet Manipulation
-5. Two Pointers or Iterators
-- Five Easy 
-- Ten Medium 
-- Five Hard 
+5. Two Pointers or Iterators (1, 2, 3, 4, 5)
 6. Fast and Slow Pointers
 7. Sliding Window
 8. Binary Search
