@@ -117,7 +117,7 @@ Must-know (daily use)
 4. CommonRuntimeExceptions x
 5. TryWithResources x
 6. ThrowableHierarchy
-![img.png](img.png)
+![img.png](assets/img.png)
 7. CommonCheckedCompileTimeExceptions x
 8. ExceptionPropagation
 When exception is not handled, exception are propagated upward (spread upward). So if we have three methods calling each other.
@@ -129,8 +129,8 @@ Important (frequent)
 9. CustomCheckedException x
 10. CustomUncheckedException x
 11. MultiCatch x
-12. RethrowAndWrap
-13. ExceptionChaining
+12. RethrowAndWrap x
+13. ExceptionChaining x
 
 Good to know (occasional)
 14. FinallyPitfalls
