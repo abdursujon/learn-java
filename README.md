@@ -132,13 +132,13 @@ Important (frequent)
 12. RethrowAndWrap x
 13. ExceptionChaining x
 
-Good to know (occasional)
+Good to know 
 14. FinallyPitfalls
 15. ExceptionsInLambdas
 16. ExceptionsInConstructors
 17. ExceptionsInOverriding
 
-Niche (rare but worth knowing)
+Niche 
 18. ExceptionsInThreads
 19. SuppressedExceptions
 20. AssertionsVsExceptions
@@ -276,10 +276,10 @@ Niche (rare but worth knowing)
 
 ### Highest Priority
 1. Array Manipulation (1, 2, 3, 4, 5)
-2. String Manipulation (1, 2)
+2. String Manipulation (1, 2, 3, 4)
 3. HashMap Manipulation
 4. HashSet Manipulation
-5. Two Pointers or Iterators (1, 2, 3, 4, 5)
+5. Two Pointers or Iterators (1, 2, 3, 4, 5, 6)
 6. Fast and Slow Pointers
 7. Sliding Window
 8. Binary Search

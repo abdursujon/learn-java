@@ -75,5 +75,6 @@ public class LinkedHashMaps {
     public static void main(String[] args) {
         HashMaps map = new HashMaps();
         System.out.println(map.universityOfSalfordDegreeDetails());
+        String s = "edcba";
     }
 }

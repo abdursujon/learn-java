@@ -145,6 +145,107 @@ public class StringManipulation {
         return list.size();
     }
 
+    // 67. Add Binary
+    public static String addBinary(String a, String b) {
+        StringBuilder result = new StringBuilder();
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+        int carry = 0;
+
+        while(i >= 0 || j >= 0 || carry > 0){
+            int digitA = 0;
+            if(i >= 0){
+                digitA = a.charAt(i) - '0';
+                i--;
+            }
+
+            int digitB = 0;
+            if(j >= 0){
+                digitB = b.charAt(j) - '0';
+                j--;
+            }
+
+            int sum = digitA + digitB + carry;
+            carry = sum / 2;
+            int currDigit = sum % 2;
+            result.append(currDigit);
+        }
+
+        return result.reverse().toString();
+    }
+
+
+    // 168. Excel sheet column title
+    public static String convertToTitle(int columnNumber) {
+        if(columnNumber == 0) return "";
+        columnNumber--;
+        char lastLetter = (char) ('A' + columnNumber % 26);
+        String leftPart = convertToTitle(columnNumber / 26);
+        return leftPart + lastLetter;
+    }
+
+    public String convertToTitleTwo(int n) {
+        StringBuilder ans = new StringBuilder();
+        while(n > 0){
+            n--;
+            int curr = n % 26;
+            n = n / 26;
+            ans.append((char)('A' + curr));
+        }
+
+        return ans.reverse().toString();
+    }
+
+
+    // 171. Excel Sheet Column Number
+    public static int titleToNumber(String columnTitle) {
+        int ans = 0;
+
+        for(int i = 0; i < columnTitle.length(); i++){
+            ans = ans * 26 + (columnTitle.charAt(i) - 'A') + 1;
+        }
+
+        return ans;
+    }
+
+    // 205. Isomorphic Strings
+    public static boolean isIsomorphic(String s, String t) {
+        List<Character> list = new ArrayList<>();
+        for(int i = 0; i < t.length(); i++){
+            if(list.contains(s.charAt(i))){
+                return false;
+            }
+            list.add(s.charAt(i));
+        }
+        System.out.println(list);
+        return true;
+    }
+
+
+    // 242. Valid Anagram
+    public static boolean isAnagram(String s, String t) {
+        int sLen = s.length();
+        int tLen = t.length();
+        if(sLen != tLen){
+            return false;
+        }
+
+        char[] cs = s.toCharArray();
+        Arrays.sort(cs);
+        System.out.println(cs);
+        char[] ts = t.toCharArray();
+        Arrays.sort(ts);
+        System.out.println(ts);
+
+        for(int i = 0; i < sLen; i++){
+            if(cs[i] != ts[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     public static void main(String[] args) {
         StringManipulation sm = new StringManipulation();
 
@@ -170,6 +271,23 @@ public class StringManipulation {
         System.out.println(lengthOfLastWord("Hello World"));
         System.out.println(lengthOfLastWord("Hello"));
         System.out.println(lengthOfLastWord("luffy is still joyboy   "));
+
+        // 67. Add Binary
+        System.out.println(addBinary("1", "1"));
+
+        char a = 'A';
+        int i = a;
+        System.out.println(i);
+
+        System.out.println(convertToTitle(1));
+
+        // 171. Excel Sheet Column Number
+        System.out.println(titleToNumber("B"));
+
+        // 205. Isomorphic Strings
+        System.out.println(isIsomorphic("egg", "add"));
+
+        isAnagram("rat", "cat");
     }
 
 }

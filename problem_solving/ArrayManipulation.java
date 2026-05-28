@@ -153,6 +153,18 @@ public class ArrayManipulation {
         }
     }
 
+    // Covert String to binary
+    public static String convertStringToBinary(String s){
+        StringBuilder sb = new StringBuilder();
+        char[] chars = s.toCharArray();
+        for(char c: chars){
+            sb.append(String.format("%8s", Integer.toBinaryString(c)).replaceAll(" ", "0"));
+        }
+        int b = 555;
+        return sb.toString();
+    }
+
+
     public static void main(String[] args) {
         System.out.println(maxProfit(new int[]{7, 6, 4, 3, 1}));
         System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
@@ -169,5 +181,8 @@ public class ArrayManipulation {
 
         // 414. Third Maximum number
         System.out.println(thirdMax(new int[] {2,2,3,1}));
+
+        // Covert String to binary
+        System.out.println(convertStringToBinary("Sujon"));
     }
 }
