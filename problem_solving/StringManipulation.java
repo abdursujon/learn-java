@@ -245,6 +245,43 @@ public class StringManipulation {
         return true;
     }
 
+    // 383. Ransom Note
+    public static boolean canConstruct(String ransomNote, String magazine) {
+        char[] ransomNoteChars = ransomNote.toCharArray();
+        char[] magazineChars = magazine.toCharArray();
+
+        Map<Character, Integer> map = new HashMap<>();
+        for(char c:  magazineChars){
+            // map.getOrDefault(c, 0) + 1 we are counting how many times we have seen c
+           map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+        for(char c: ransomNoteChars){
+            // if character in ransomNoteChars does not exist in the map return false
+            if(map.getOrDefault(c, 0) == 0) return false;
+            // if we have found c in the map for character in ransomNote decrease count by 1 so we can declare if we have enough character of ransomNote in magazine
+            map.put(c, map.getOrDefault(c, 0) - 1);
+        }
+
+        return true;
+    }
+
+    public boolean canConstructTwo(String ransomNote, String magazine) {
+        Map<Character, Integer> map = new HashMap<>();
+        for(int i = 0; i < magazine.length(); i++){
+            char c = magazine.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+        for(int i = 0; i < ransomNote.length(); i++){
+            char c = ransomNote.charAt(i);
+            if(map.getOrDefault(c, 0) == 0) return false;
+            map.put(c, map.getOrDefault(c, 0) - 1);
+        }
+
+        return true;
+    }
+
 
     public static void main(String[] args) {
         StringManipulation sm = new StringManipulation();
@@ -288,6 +325,9 @@ public class StringManipulation {
         System.out.println(isIsomorphic("egg", "add"));
 
         isAnagram("rat", "cat");
+
+        // 383. Ransom Note
+        System.out.println(canConstruct("aa", "ab"));
     }
 
 }
